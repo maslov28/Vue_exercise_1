@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <div id="app">
+    <div id="app" v-cloak>
         <p>Сверстать инпут и кнопку. При нажатии на кнопку введенный текст отобразить ниже инпута, значение инпута очистить.</p>
         <input type="text" v-model="inputValue">
         <div>{{out}}</div>
